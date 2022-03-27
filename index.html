@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="javaScript.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+ 
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="body">
+    <header id="header">
+      <img src="images\logo.svg" id="logoIcon">
+    </header>
+  <div id="master">
+    <div id="container">
+        <section id="sectionLeft">
+          <p id="billText">Bill</p>
+         <div><img src="images\icon-dollar.svg" id="dolarIcon">
+          <input type="number" id="inputNumber" class="input" placeholder="0" min="0" oninput="this.value = Math.abs(this.value)">
+         </div>
+          <div id="middleContainer">
+            <p id="tipText">Select Tip %</p>
+            <div id="selectButtons">
+                <button id="button1" class="button" onclick="amountCalc(5)">5%</button>
+                <button id="button2" class="button" onclick="amountCalc(10)">10%</button>
+                <button id="button3" class="button" onclick="amountCalc(15)">15%</button>
+            </div>
+            <div id="selectButtons">
+                <button id="button4" class="button" onclick="amountCalc(25)">25%</button>
+                <button id="button5" class="button" onclick="amountCalc(50)">50%</button>
+                <input  type="number" id="inputCustom" class="input" min="0" oninput="this.value = Math.abs(this.value)" placeholder="Custom" onblur="amountCalc(-1)">
+            </div>
+            <p id="peopleText">Number of people&nbsp&nbsp<small id="erroText">can't be zero</small></p> 
+            <div>
+              <img src="images\icon-person.svg" id="peopleIcon">
+            <input type="number" id="inputPeople" class="input" placeholder="0" min="1" oninput="this.value = Math.abs(this.value)">
+          </div>
+          </div>
+      </section>
+          <div id="sectionRight">
+
+         
+        <section id="sectionRight1">
+          <div id="amountText">
+              Tip Amount<p id="perPerson">/ person</p>
+              Total <p id="perPerson">/ person</p>
+        </div>
+          <div>
+          <p id="amountValue">$0</p>
+          <p id="totalValue">$0</p>
+          
+          </div>
+          
+        </section id="sectionRight1">
+        <div id="space1"></div>
+        <div id="resetButton" onclick="amountCalc(-5)">RESET</div>
+      </div>
+    </div> 
+     
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Vinimancabbr">Vini</a>.</div>
+</body>
+</html>
