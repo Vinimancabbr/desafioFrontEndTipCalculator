@@ -2,7 +2,6 @@ function amountCalc(Tip) {
     console.log(Tip)
         let Bill = Number(document.getElementById("inputNumber").value)
         let people = Number(document.getElementById('inputPeople').value)
-        
     if (Tip == -5) {
         document.getElementById("inputNumber").value = 0;
         document.getElementById("amountValue").innerHTML = 0;
@@ -12,17 +11,12 @@ function amountCalc(Tip) {
     }
     else {        
     if (people >= 1) {
-
         document.getElementById("inputPeople").style.border = "initial"
         document.getElementById("inputPeople").style.borderColor = "initial"
         document.getElementById("inputPeople").style.borderWidth = "initial"
         document.getElementById("erroText").style.display = "none"
-        
-        
     if (Tip > 1) { 
-        
         if (Bill > 99999.99) {
-
             Bill = 0
             document.getElementById("inputNumber").value = 0
             return Bill
@@ -32,8 +26,6 @@ function amountCalc(Tip) {
         document.getElementById("amountValue").innerHTML = amount;
         let Total = Number((Bill + (amount * people)) / people).toFixed(2)
         document.getElementById("totalValue").innerHTML = Total;
-       
-
         }
     }
     else {

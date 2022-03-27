@@ -3,13 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <script src="javaScript.js"></script>
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Tip calculator app</title>
- 
-
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -20,10 +17,10 @@
     <header id="header">
       <img src="images\logo.svg" id="logoIcon">
     </header>
-  <div id="master">
-    <div id="container">
-        <section id="sectionLeft">
-          <p id="billText">Bill</p>
+    <div id="master">
+        <div id="container">
+            <section id="sectionLeft">
+                <p id="billText">Bill</p>
          <div><img src="images\icon-dollar.svg" id="dolarIcon">
           <input type="number" id="inputNumber" class="input" placeholder="0" min="0" oninput="this.value = Math.abs(this.value)">
          </div>
@@ -64,8 +61,7 @@
         <div id="space1"></div>
         <div id="resetButton" onclick="amountCalc(-5)">RESET</div>
       </div>
-    </div> 
-     
+    </div>   
   </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

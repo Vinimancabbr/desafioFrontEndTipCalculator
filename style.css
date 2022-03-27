@@ -8,20 +8,12 @@
     --hsl-white: hsl(0, 0%, 100%);
     --hsl-strongCyan: hsl(172, 67%, 45%);
     --font-family: 'Space Mono', monospace;
-
-
-
 }
-
-
-
 /*----------------------------Pagina toda----------------------------*/ 
-html {
-    
+html { 
     width: 100%;
     height: 100%;
-    font-family: var(--font-family);
-    
+    font-family: var(--font-family);  
 }
 body {
     overflow: hidden;
@@ -30,7 +22,6 @@ body {
     height: 100%;
     background-color: var(--hsl-lightGrayishCyan);
     padding-top: 60px;
-
 }
 #master {
     width: 100%;
@@ -42,27 +33,22 @@ body {
 /*-----------------------------------------------------------------*/   
 
 /*----------------------------Cabeçalho----------------------------*/    
-
 #header {
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--hsl-veryDarkCyan);
     margin-bottom: 50px;
-    margin-top: 70px;
-    
+    margin-top: 70px;   
 }  
 #logoIcon {
-    width: 50px;
-    
+    width: 50px;  
 }
 /*-----------------------------------------------------------------*/ 
-
 /*-------------Div que contem o lado esquerdo e direito------------*/   
 #container {
     display: flex;
     background-color: var(--hsl-white);
-    
     padding: 0px;
     border-radius: 15px;
     flex-flow: row;
@@ -85,14 +71,8 @@ body {
     margin: 0px;
     color: var(--hsl-darkGrayishcyan);
 }
-
-
 /*-----------------------------------------------------------------*/
-
 /*---------------------Configuração de inputs----------------------*/    
-
-
-
 .input {
     font-family: var(--font-family);
     text-align: right;
@@ -104,16 +84,11 @@ body {
     border-radius: 4px;
     font-size: 15px;
     padding-right: 10px;
-    
 }
 .input:focus {
     outline-style: solid;
-    outline-color: var(--hsl-strongCyan);
-        
-        
-
-   font-family: 'Space Mono', monospace;
-   
+    outline-color: var(--hsl-strongCyan);     
+    font-family: 'Space Mono', monospace;  
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -123,12 +98,9 @@ input::-webkit-inner-spin-button {
 #erroText {
         display: none;
         color: rgb(207, 114, 114);
-        text-align: center;
-        
-        
+        text-align: center;   
 }
 /*-----------------------------------------------------------------*/ 
-
 /*---------------------Configuração de buttons---------------------*/ 
 .button {
     background-color: var(--hsl-veryDarkCyan);
@@ -144,9 +116,7 @@ input::-webkit-inner-spin-button {
 }
 .button:focus {
     background-color: var(--hsl-strongCyan);
-    color: var(--hsl-veryDarkCyan);
-  
-    
+    color: var(--hsl-veryDarkCyan); 
 }
 #inputCustom {
     width: 56px;
@@ -160,41 +130,28 @@ input::-webkit-inner-spin-button {
     display: flex;
     align-content: space-between;
     justify-content: space-between;
-    margin-bottom: 10px;
-    
-    
-    
+    margin-bottom: 10px;   
 }
 #tipText {
     font-size: 12px;
     color: var(--hsl-darkGrayishcyan);
     margin-top: 25px;
-
 }
 #peopleText {
     font-size: 12px;
     color: var(--hsl-darkGrayishcyan);
     margin-top: 30px;
     margin-bottom: 5px;
-
 }
-
-
 #inputPeople {
     text-align: right;
-    
 }
 #inputPeople:focus {
     outline-style: solid;
-    outline-color: var(--hsl-strongCyan);
-    
-        
-    
+    outline-color: var(--hsl-strongCyan);   
 }
 /*------------------------------------------------------------------*/ 
-
 /*---------------------------Parte Direita--------------------------*/
-
 /*--------------------------Container geral-------------------------*/   
 #sectionRight {
     background-color: var(--hsl-veryDarkCyan);
@@ -214,7 +171,6 @@ input::-webkit-inner-spin-button {
     flex: 1;
     font-size: 12px;
     white-space: nowrap;
-    
 }   
 #perPerson {
     margin: 3px;
@@ -230,7 +186,6 @@ input::-webkit-inner-spin-button {
     width: 120px;
     margin-bottom: 25px;
     justify-content: flex-end;
-    
 }
 #totalValue {
     color: var(--hsl-strongCyan);
@@ -240,11 +195,9 @@ input::-webkit-inner-spin-button {
     margin-top: 0px;
     width: 120px;
     margin-bottom: 25px;
-    justify-content: flex-end;
-    
+    justify-content: flex-end;    
 }
 /*----------------------------Segunda div----------------------------*/ 
-
 #resetButton {
     display: flex;
     justify-content: center;
@@ -260,15 +213,12 @@ input::-webkit-inner-spin-button {
     background-color: var(--hsl-lightGrayishCyan);
     color: var(--hsl-veryDarkCyan);
 }
-
 /*----------------------Configuração dos icones----------------------*/ 
-
 #dolarIcon {
     position: absolute;
     margin-top: 10px;
     margin-left: 10px;
-    width: 8px ;
-    
+    width: 8px ; 
 }
 #peopleIcon {
     position: absolute;
@@ -277,12 +227,8 @@ input::-webkit-inner-spin-button {
     margin-left: 10px;
 }
 /*------------------------------------------------------------------*/ 
-
 /*------------------------------------------------------------------*/ 
-
 /*-------------------------responsividade---------------------------*/ 
-
-
 /*Height*/
 @media (max-height: 449px) {
     body {
